@@ -1,0 +1,111 @@
+@import url(base.css);
+.tooltip {
+  position: relative;
+}
+.tooltip .tooltip-content {
+  display: none;
+  width: 260px;
+  background-color: rgba(93, 93, 93, 0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-family: var(--face-off-m54);
+  font-size: 1rem;
+  z-index: 400;
+}
+/* Position */
+.tooltip [data-position='right'] {
+  position: absolute;
+  top: 50%;
+  left: 108%;
+  transform: translate(0, -50%);
+}
+.tooltip [data-position='left'] {
+  position: absolute;
+  top: 50%;
+  right: 108%;
+  transform: translate(0, -50%);
+}
+.tooltip [data-position='bottom'] {
+  position: absolute;
+  top: 108%;
+}
+
+.tooltip:hover .tooltip-content {
+  pointer-events: none;
+  display: block;
+}
+
+.tooltip-content::before {
+  content: attr(data-name-item);
+  text-transform: uppercase;
+  font-family: var(--motorblock);
+  font-size: 1rem;
+}
+.tooltip-content[data-position='right']::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: 100%;
+  border-width: 0.45rem;
+  border-style: solid;
+  border-color: transparent rgba(93, 93, 93, 0.8) transparent transparent;
+}
+.tooltip-content[data-position='left']::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 100%;
+  border-width: 0.45rem;
+  border-style: solid;
+  border-color: transparent transparent transparent rgba(93, 93, 93, 0.8);
+}
+.tooltip-content[data-position='bottom']::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  border-width: 0.45rem;
+  border-style: solid;
+  border-color: transparent transparent rgba(93, 93, 93, 0.8) transparent;
+}
+.tooltip-content label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.label-detail {
+  display: flex;
+  align-items: center;
+}
+.tooltip-content label [data-stats-detail]::after {
+  content: attr(data-stats-detail);
+  font-family: var(--myraid-pro-regular);
+  font-size: 0.8rem;
+  color: #e5e5e5;
+  margin-left: 0.1rem;
+}
+label span.stats {
+  width: 120px;
+  height: 6px;
+  border: 1px solid #fff;
+  position: relative;
+}
+label span.stats p {
+  content: '';
+  background-color: var(--red-primary);
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+}

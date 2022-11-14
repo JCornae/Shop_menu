@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <title>Area Training</title>
+  </head>
+
+  <body id="body">
+    <div class="container">
+      <div class="wrapper">
+        <dialog class="modal">
+          <div class="modal-header">
+            <h2>ยืนยันการซื้อ</h2>
+            <span class="close">&times;</span>
+          </div>
+          <div class="modal-content">
+            <p>คุณต้องการที่จะซื้อสินค้าใช่มั้ย?</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn-confirm">OK</button
+            ><button class="btn-cancel">Cancel</button>
+          </div>
+        </dialog>
+        <div class="tabs">
+          <!-- Profile -->
+          <header class="tab-profile">
+            <img
+              src="https://cdn.discordapp.com/attachments/739363217436049439/961337385243779153/profile.png"
+              class="img-profile"
+            />
+            <!-- <div class="profile-user">
+              <img
+                src="https://cdn.discordapp.com/attachments/739363217436049439/961302890893439006/unknown_1.png"
+                class="img-username"
+              />
+              <p class="username">puipui shallows</p>
+            </div> -->
+            <!-- !Start Profile-user -->
+            <div class="profile-user">
+              <fieldset>
+                <legend>Username:</legend>
+                <p class="username">puipui shallows</p>
+              </fieldset>
+            </div>
+            <!-- !End Profile-user -->
+          </header>
+          <!-- Tabs Category -->
+          <ul class="tab-list">
+            <li class="tab-link is-active" data-category="#home">
+              <i class="ph-house"></i>home
+            </li>
+            <li class="tab-link" data-category="#items">
+              <i class="ph-shopping-cart-simple"></i>items
+            </li>
+            <li class="tab-link" data-category="#weapon">
+              <i class="ph-sword"></i>weapons
+            </li>
+            <li class="tab-link" data-category="#fashion">
+              <i class="ph-t-shirt"></i>fashion
+            </li>
+            <li class="tab-link" data-category="#gachapon">
+              <i class="ph-gift"></i>gachapon
+            </li>
+            <li class="tab-link" data-category="#reward">
+              <i class="ph-medal"></i> reward
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <!-- Category: Home Content -->
+          <div class="box is-active" id="home">
+            <p class="all-cash cash-icon black-cash">15434</p>
+          </div>
+          <!-- Category: Items Content -->
+          <div class="box" id="items">
+            <p class="all-cash cash-icon black-cash">15434</p>
+          </div>
+          <!-- Category: Weapon Content -->
+          <div class="box" id="weapon">
+            <p class="all-cash cash-icon black-cash">15434</p>
+          </div>
+          <!-- Category: Fashion Content -->
+          <div class="box" id="fashion">
+            <p class="all-cash cash-icon black-cash">15434</p>
+          </div>
+          <!-- Category: Gachapon Content -->
+          <div class="box" id="gachapon">
+            <p class="all-cash cash-icon black-cash">15434</p>
+          </div>
+          <!-- Category: Reward Content -->
+          <div class="box" id="reward"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/script.js"></script>
+</html>

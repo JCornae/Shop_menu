@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+:root {
+  --white-primary: #ffffff;
+  --white-second: #ebecf0;
+  --active-color: #ff344149;
+  --primary-color: #a7333fc5;
+  --second-color: #727070;
+  --red-primary: #e01e37;
+  --drop-shadow: crimson;
+  --wrapper-width: 1180px;
+  --wrapper-height: 760px;
+  --tabs-width: 320px;
+  --content-width: calc(var(--wrapper-width) - var(--tabs-width));
+  --z-index-top: 300;
+  --z-index-middle: 200;
+  --z-index-bottom: 100;
+  --face-off-m54: "Face Off M54";
+  --myraid-pro-regular: "Myriad Pro Regular";
+  --motorblock: "Motorblock";
+  --Item-height: 150px;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: 400;
+}
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  /* font-family: var(--myraid-pro-regular); */
+  font-family: "Kanit", var(--myraid-pro-regular), sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  letter-spacing: 1px;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--white-primary);
+}
+@font-face {
+  font-family: "Face Off M54";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Face Off M54"), url("../fonts/Face-Off-M54.ttf");
+}
+@font-face {
+  font-family: Motorblock;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Motorblock"), url("../fonts/Motorblock.ttf");
+}
+@font-face {
+  font-family: "Myriad Pro Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Myriad Pro Regular"),
+    url("../fonts/MYRIADPRO-REGULAR.woff") format("woff");
+}

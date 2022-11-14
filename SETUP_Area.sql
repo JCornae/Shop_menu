@@ -1,0 +1,4 @@
+ALTER TABLE `users`
+	ADD COLUMN `rewardpoint` INT(11) NULL DEFAULT 0,
+	ADD COLUMN `rewardtier` INT(11) NULL DEFAULT 0
+;
